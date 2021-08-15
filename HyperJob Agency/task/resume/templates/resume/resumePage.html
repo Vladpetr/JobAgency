@@ -1,0 +1,9 @@
+{% extends 'resume/base.html' %}
+
+{% block title %}{{ block.super }}{% endblock %}
+
+{% block content %}
+    {% for data in resumes %}
+        <div>{{data.author}}: {{data.description}}</div>
+    {% endfor %}
+{% endblock %}
